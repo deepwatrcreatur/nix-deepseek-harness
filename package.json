@@ -1,0 +1,16 @@
+{
+  "name": "dsh-pkg",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Anwer Khan <deepwatrcreatur@gmail.com>",
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "@deepseek-ai/dsh": "^0.1.2-rc.1"
+  }
+}
