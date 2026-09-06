@@ -49,10 +49,10 @@ if [ "$#" -eq 0 ]; then
   echo "  dsh --profile tui                          (TUI mode)"
   echo "  dsh web                                    (web interface)"
   echo ""
-  exec @node@ "@binJs@" --help
+  exec @node@ --expose-internals "@binJs@" --help
 fi
 
-exec @node@ "@binJs@" "$@"
+exec @node@ --expose-internals "@binJs@" "$@"
 EOF
             substituteInPlace $out/bin/dsh \
               --replace-fail "@node@" "${pkgs.nodejs}/bin/node" \
